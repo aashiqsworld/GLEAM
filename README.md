@@ -1,15 +1,15 @@
-#GLEAM
+# GLEAM
 
-###Generate Light Estimation for AR on Mobile systems in real time
+### Generate Light Estimation for AR on Mobile systems in real time
 
 GLEAM is an augmented reality framework that provides accurate and real-time illumination on mobile devices. It currently supports the ARKit and Vuforia plugins for Unity.
 
 
-#Installation
+# Installation
 
 To use GLEAM in your own Unity project, clone this repository and export to a Unity package in the editor. You can then drag this package into your own project.
 
-##ARKit
+## ARKit
 
 The Unity scene must contain the following objects:
 
