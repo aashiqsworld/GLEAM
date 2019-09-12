@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: c894e9df65b82064e80c7a1b5da5dc93
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: big_pan
+    100002: Cooking_surface
+    100004: handle
+    100006: handle01
+    100008: hooks
+    100010: //RootNode
+    100012: Lattice
+    100014: middle_pan
+    100016: Original_Pro_Pan
+    100018: Original_Pro_Pan001
+    100020: small_pan
+    100022: Sphere_background
+    100024: Table
+    100026: Table01
+    100028: Table02
+    100030: VRayCam001
+    100032: VRayCam001.Target
+    100034: VRayCam002
+    100036: VRayCam002.Target
+    100038: VRayCam003
+    100040: VRayCam003.Target
+    100042: VRayCam004
+    100044: VRayCam004.Target
+    100046: VRayCam005
+    100048: VRayCam005.Target
+    100050: VRayLight001
+    100052: VRayLight002
+    100054: VRayLight003
+    100056: Wall
+    400000: big_pan
+    400002: Cooking_surface
+    400004: handle
+    400006: handle01
+    400008: hooks
+    400010: //RootNode
+    400012: Lattice
+    400014: middle_pan
+    400016: Original_Pro_Pan
+    400018: Original_Pro_Pan001
+    400020: small_pan
+    400022: Sphere_background
+    400024: Table
+    400026: Table01
+    400028: Table02
+    400030: VRayCam001
+    400032: VRayCam001.Target
+    400034: VRayCam002
+    400036: VRayCam002.Target
+    400038: VRayCam003
+    400040: VRayCam003.Target
+    400042: VRayCam004
+    400044: VRayCam004.Target
+    400046: VRayCam005
+    400048: VRayCam005.Target
+    400050: VRayLight001
+    400052: VRayLight002
+    400054: VRayLight003
+    400056: Wall
+    2100000: chrome_01
+    2100002: wall
+    2100004: chrome
+    2100006: wooden_plane
+    2100008: table
+    2100010: Background
+    2100012: Stainless_steel_brushed_rad
+    2100014: Stainless_steel_brushed
+    2100016: bottom_pot
+    2300000: big_pan
+    2300002: Cooking_surface
+    2300004: handle
+    2300006: handle01
+    2300008: hooks
+    2300010: Lattice
+    2300012: middle_pan
+    2300014: Original_Pro_Pan
+    2300016: Original_Pro_Pan001
+    2300018: small_pan
+    2300020: Sphere_background
+    2300022: Table
+    2300024: Table01
+    2300026: Table02
+    2300028: Wall
+    3300000: big_pan
+    3300002: Cooking_surface
+    3300004: handle
+    3300006: handle01
+    3300008: hooks
+    3300010: Lattice
+    3300012: middle_pan
+    3300014: Original_Pro_Pan
+    3300016: Original_Pro_Pan001
+    3300018: small_pan
+    3300020: Sphere_background
+    3300022: Table
+    3300024: Table01
+    3300026: Table02
+    3300028: Wall
+    4300000: Lattice
+    4300002: big_pan
+    4300004: small_pan
+    4300006: middle_pan
+    4300008: handle01
+    4300010: handle
+    4300012: hooks
+    4300014: Cooking_surface
+    4300016: Table
+    4300018: Table01
+    4300020: Table02
+    4300022: Wall
+    4300024: Sphere_background
+    4300026: Original_Pro_Pan
+    4300028: Original_Pro_Pan001
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Background
+    second: {fileID: 2100000, guid: f8d9ace9f8c778e47ad522060574e783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stainless_steel_brushed
+    second: {fileID: 2100000, guid: 16b8120a1dd3e6b478c8a503f70f643c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stainless_steel_brushed_rad
+    second: {fileID: 2100000, guid: 37d0a16f3510d9243b338e6c09233ed6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bottom_pot
+    second: {fileID: 2100000, guid: 82ae097ca8bb7954eacf94fe836f13d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: 0bdb3e5d3101c7e40a21255e0b158203, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome_01
+    second: {fileID: 2100000, guid: 838fbc6166ff0f84da2473211e664261, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table
+    second: {fileID: 2100000, guid: 6de2bc43f8e19514f90e58b7ad764bb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: dd07749f869674e4cb4996bb622a8c35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wooden_plane
+    second: {fileID: 2100000, guid: 1c23ba84cfe1cdb49a7f9d445076f994, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

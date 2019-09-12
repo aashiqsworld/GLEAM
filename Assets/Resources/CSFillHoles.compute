@@ -1,0 +1,57 @@
+﻿#pragma kernel FHoles
+
+RWStructuredBuffer<float>colorsA;
+RWStructuredBuffer<float>colorsB;
+//int xdiff[9] = { 0, 1, -1, 0, 1, -1, 0, 1, -1 };
+//int ydiff[9] = { 0, 0, 0, 1, 1, 1, -1, -1, -1 };
+
+[numthreads(32,32,1)]
+void FHoles(uint3 id : SV_DispatchThreadID)
+{
+	int faceSideLength = 128;
+	uint diffindex;
+	for (diffindex = 0; diffindex < 8; diffindex++) {
+		int xx = (diffindex + 1) % 3 - 1;
+		int yy = (diffindex + 3) / 3 - 1;
+		int i = id.x + xx;//xdiff[1];// diffindex];
+		int j = id.y + yy;//ydiff[1];// diffindex];
+		i = i < faceSideLength ? i : faceSideLength - 1; //make sure it's in bounds < faceSideLength
+		j = j < faceSideLength ? j : faceSideLength - 1; //make sure it's in bounds < faceSideLength
+		i = i >= 0 ? i : 0; //make sure it's in bounds >= 0
+		j = j >= 0 ? j : 0; //make sure it's in bounds >= 0
+
+		if (colorsA[(i + j * faceSideLength) * 4 + 3] > 0.5f) {
+			colorsB[(id.x + id.y * faceSideLength) * 4] = colorsA[(i + j * faceSideLength) * 4];
+			colorsB[(id.x + id.y * faceSideLength) * 4 + 1] = colorsA[(i + j * faceSideLength) * 4 + 1];
+			colorsB[(id.x + id.y * faceSideLength) * 4 + 2] = colorsA[(i + j * faceSideLength) * 4 + 2];
+			colorsB[(id.x + id.y * faceSideLength) * 4 + 3] = colorsA[(i + j * faceSideLength) * 4 + 3];
+			diffindex = 9;//forces inner for loop exit
+
+		}
+
+	}
+
+	//should sync threads here, ideally.
+
+	for (diffindex = 0; diffindex < 8; diffindex++) {
+		int xx = (diffindex + 1) % 3 - 1;
+		int yy = (diffindex + 3) / 3 - 1;
+		int i = id.x + xx;//xdiff[1];// diffindex];
+		int j = id.y + yy;//ydiff[1];// diffindex];
+		i = i < faceSideLength ? i : faceSideLength - 1; //make sure it's in bounds < faceSideLength
+		j = j < faceSideLength ? j : faceSideLength - 1; //make sure it's in bounds < faceSideLength
+		i = i >= 0 ? i : 0; //make sure it's in bounds >= 0
+		j = j >= 0 ? j : 0; //make sure it's in bounds >= 0
+
+		if (colorsB[(i + j * faceSideLength) * 4 + 3] > 0.5f) {
+			colorsA[(id.x + id.y * faceSideLength) * 4] = colorsB[(i + j * faceSideLength) * 4];
+			colorsA[(id.x + id.y * faceSideLength) * 4 + 1] = colorsB[(i + j * faceSideLength) * 4 + 1];
+			colorsA[(id.x + id.y * faceSideLength) * 4 + 2] = colorsB[(i + j * faceSideLength) * 4 + 2];
+			colorsA[(id.x + id.y * faceSideLength) * 4 + 3] = colorsB[(i + j * faceSideLength) * 4 + 3];
+			diffindex = 9;//forces inner for loop exit
+
+		}
+
+	}
+}
+ 
