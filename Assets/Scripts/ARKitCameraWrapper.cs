@@ -6,7 +6,7 @@ using UnityEngine.XR.iOS;
 
 public class ARKitCameraWrapper : MonoBehaviour
 {
-    public GLEAMBehaviour mGLEAM;
+    public NewGLEAMBehaviour mGLEAM;
     [HideInInspector]
     public RenderTexture cameraImage; // full color camera image
     public Camera sampleCamera; // refenence to the camera that

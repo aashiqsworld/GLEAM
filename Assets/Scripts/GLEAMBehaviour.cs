@@ -8,8 +8,6 @@ using UnityEngine.Networking;
 using System.IO;
 using UnityEngine.Rendering;
 using System.Threading;
-using UnityEngine.SceneManagement;
-using UnityEngine.XR.iOS;
 using TMPro;
 
 
